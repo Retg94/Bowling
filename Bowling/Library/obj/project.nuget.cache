@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2ZoAWKsyKkpw+ddZ0J5s77B+UcP6wLnunDtVXvWZDZU8CEn3RmTuXaBb0WYJvBLw6sTK122GrYFmJ2NCQ4sGQ==",
+  "success": true,
+  "projectFilePath": "C:\\Workspace\\Inlamningar\\Bowling\\Bowling\\Library\\Library.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\retg9\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\retg9\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
