@@ -6,12 +6,16 @@ namespace Library
 {
     public class Round
     {
-        public int Roll(int pins)
+        private List<int> framePoints = new List<int>();
+        public int Roll(int ballOne, int ballTwo)
         {
-            if (pins > 10 || pins < 0)
+            int totalPins = ballOne + ballTwo;
+            if (totalPins > 10 || totalPins < 0 || ballOne<0 || ballOne > 10 || ballTwo <0 || ballTwo > 10)
                 throw new ArgumentException();
-            int restPins = 10 - pins;
-            return restPins;
+
+            int tmpFramePoint = totalPins;
+            framePoints.Add(tmpFramePoint);
+            return tmpFramePoint;
         }
     }
 }

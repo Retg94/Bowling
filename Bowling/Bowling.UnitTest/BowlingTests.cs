@@ -7,39 +7,39 @@ namespace Bowling.UnitTest
     public class BowlingTests
     {
         [Fact]
-        public void ReturnRestPins_Entering1_Return9()
+        public void ReturnFramePoint_Entering1and1_Return2()
         {
             var Round = new Round();
 
-            int actual = Round.Roll(1);
+            int actual = Round.Roll(1,1);
 
-            Assert.Equal(9, actual);
+            Assert.Equal(2, actual);
         }
 
         [Fact]
-        public void ReturnRestPins_Entering10_Return0()
+        public void ReturnRestPins_Entering0and0_Return0()
         {
             var Round = new Round();
 
-            int actual = Round.Roll(10);
+            int actual = Round.Roll(0,0);
 
             Assert.Equal(0, actual);
         }
 
         [Fact]
-        public void ReturnRestPins_Entering11_ThrowArgumentException()
+        public void ReturnRestPins_Entering9and2_ThrowArgumentException()
         {
             var Round = new Round();
 
-            Assert.Throws<ArgumentException>(() => Round.Roll(11));
+            Assert.Throws<ArgumentException>(() => Round.Roll(9,2));
         }
 
         [Fact]
-        public void ReturnRestPins_EnteringMinus1_ThrowArgumentException()
+        public void ReturnRestPins_EnteringMinusValues_ThrowArgumentException()
         {
             var Round = new Round();
 
-            Assert.Throws<ArgumentException>(() => Round.Roll(-1));
+            Assert.Throws<ArgumentException>(() => Round.Roll(-1, 2));
         }
 
 
