@@ -8,7 +8,10 @@ namespace Library
     {
         public int Roll(int pins)
         {
-            return 9;
+            if (pins > 10 || pins < 0)
+                throw new ArgumentException();
+            int restPins = 10 - pins;
+            return restPins;
         }
     }
 }
